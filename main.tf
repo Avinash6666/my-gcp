@@ -1,6 +1,6 @@
 resource "google_compute_instance" "vm_inst" {
   name = "terraform-vm"
-  machine_type = "e2-micro"
+  machine_type = var.machine
   zone = "us-central1-a"
 
   boot_disk {
